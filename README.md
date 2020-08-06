@@ -34,7 +34,7 @@ Visit Demo Zone (https://try.enablex.io/) to request a Guided Demo or Demo Acces
 * Register with EnableX [https://www.enablex.io] 
 * Create your Application
 * Get your App ID and App Key delivered to your Email
-* Clone or download this Repository [https://github.com/EnableX/Sample-csharp-Web-App-Multiparty-RTC.git] & follow the steps further
+* Clone or download this Repository [https://github.com/EnableX/Multiparty-Video-Calling-C-Sharp-Application] & follow the steps further
 
 #### 3.1.2 SSL Certificates
 
