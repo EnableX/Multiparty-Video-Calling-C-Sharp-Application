@@ -4,46 +4,48 @@ The Sample Web App demonstrates the use of APIs for EnableX platform to develop 
 
 RTC Applications hosted on EnableX platform run natively on supported set of web browsers without any additional plugin downloads. 
 
-This basic Multi-Party RTC Application is generated using HTML, CSS, Bootstrap, JAVA Script, jQuery, C# and EnxRtc (The EnableX Web Toolkit). 
+This basic Multi-Party RTC Application is generated using HTML, CSS, Bootstrap, JavaScript, jQuery, C# and EnxRtc (The EnableX Web Toolkit). 
 
 >The details of the supported set of web browsers can be found here:
-https://developer.enablex.io/video/faqs/device-browser-support/#q2
-
-
+https://developer.enablex.io/video/browser-compatibility-of-enablex-video/
 
 
 ## 1. Important!
 
-When developing a Client Application with EnxRtc.js make sure to include the updated EnxRtc.js polyfills for RTCPeerConnection and getUserMedia otherwise your application will not work in web browsers.
+When developing a Client Application with EnxRtc.js make sure to include the updated EnxRtc.js polyfills from https://developer.enablex.io/video-api/client-api/web-toolkit/ for RTCPeerConnection and getUserMedia. Otherwise your application will not work in web browsers.
 
 
+## 2. Trial
 
-## 2. Demo
-
-Visit Demo Zone (https://try.enablex.io/) to request a Guided Demo or Demo Access to different type of application available there. 
-
+Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/ or try our multiparty video chat https://try.enablex.io/.
 
 
 ## 3. Installation
 
-
 ### 3.1 Pre-Requisites
 
-#### 3.1.1 App Id and Api Key 
+#### 3.1.1 App Id and App Key 
 
-* Register with EnableX [https://www.enablex.io] 
+* Register with EnableX [https://portal.enablex.io/cpaas/trial-sign-up/] 
 * Create your Application
-* Get your App ID and App Key delivered to your Email
-* Clone or download this Repository [https://github.com/EnableX/Multiparty-Video-Calling-C-Sharp-Application] & follow the steps further
+* Get your App ID and App Key
+* Clone this Repository `git clone https://github.com/EnableX/Multiparty-Video-Calling-C-Sharp-Application --recursive` & follow the steps further
 
 #### 3.1.2 SSL Certificates
 
 The Application needs to run on https. So, you need to use a valid SSL Certificate for your Domain and point your application to use them.
 
+However you may use self-signed Certificate to run this application locally. There are many Web Sites to get a Self-Signed Certificate generated for you, Google it. Few among them are:
+
+* https://letsencrypt.org/
+* https://www.sslchecker.com/csr/self_signed
+* https://www.akadia.com/services/ssh_test_certificate.html  
+
+As you have Certificate or created a Self-Signed Certificate, create a directory "certs" under your Sample Web App Directory. Copy your Certificate files (.key and .crt files)  to this directory. 
 
 #### 3.1.3 Configure
 
-Before you you try accessing the application using Browser, configure the API Service by editing `appsettings.json' file to meet your requirement:
+Before you can run this application, configure the Service by editing `appsettings.json` file to use your app ID and app key:
 ``` 
 "EnableX": {
     "API_URL": "https://api.enablex.io/v1/",
@@ -65,7 +67,6 @@ Before you you try accessing the application using Browser, configure the API Se
 * Now, you should see your own video in all the tabs!
 
 
-
 ### 4 List of API endpoints exposed by the application
 
 * POST https://yourdomain.com:{PORT}/api/create-room                 - It creates EnableX Room for Video Communication
@@ -82,26 +83,23 @@ Before you you try accessing the application using Browser, configure the API Se
     ```
 
 
+## 5. Server API
 
-## 5 Server API
-
-EnableX Server API is a Rest API service meant to be called from Partners' Application Server to provision video enabled 
-meeting rooms. API Access is given to each Application through the assigned App ID and App Key. So, the App ID and App Key 
+EnableX Server API is a Rest API service meant to be called from Partners' Application Server to provision video enabled
+meeting rooms. API Access is given to each Application through the assigned App ID and App Key. So, the App ID and App Key
 are to be used as Username and Password respectively to pass as HTTP Basic Authentication header to access Server API.
- 
-For this application, the following Server API calls are used: 
-* https://developer.enablex.io/video-api/server-api/rooms-route/#get-room-info - To get a complete room definition of a given Room
-* https://developer.enablex.io/video-api/server-api/rooms-route/#create-room - To create a room
-* https://developer.enablex.io/video-api/server-api/rooms-route/#create-token - To create Token for the given Room
+
+For this application, the following Server API calls are used:
+* https://developer.enablex.io/video-api/server-api/rooms-route/#create-room - To create room to carry out a video session
+* https://developer.enablex.io/video-api/server-api/rooms-route/#create-token - To create Token for the given Room to join a session
 
 To know more about Server API, go to:
-https://developer.enablex.io/video-api/server-api/rooms-route/
+https://developer.enablex.io/video-api/server-api/
 
 
+## 6. Client API
 
-## 6 Client API
-
-Client End Point Application uses Web Toolkit EnxRtc.js to communicate with EnableX Servers to initiate and manage RTC Communications.  
+Client End Point Application uses Web Toolkit EnxRtc.js to communicate with EnableX Servers to initiate and manage RTC Communications.
 
 To know more about Client API, go to:
-https://developer.vcloudx.com/video/downloads/#web-toolkit
+https://developer.enablex.io/video-api/client-api/
