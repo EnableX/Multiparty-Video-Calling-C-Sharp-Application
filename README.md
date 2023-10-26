@@ -1,10 +1,10 @@
-# Multi-Party RTC: A Sample Web App using C# and EnableX Web Toolkit
+# Multi-Party RTC Web App using C# and EnableX Web Toolkit
 
 The Sample Web App demonstrates the use of APIs for EnableX platform to develop basic Multi-Party RTC (Real Time Communication) Application. The main motivation behind this application is to demonstrate usage of APIs and allow developers to ramp up on app by hosting on their own devices instead of directly using servers.
 
-RTC Applications hosted on EnableX platform run natively on supported set of web browsers without any additional plugin downloads. 
+RTC Applications hosted on EnableX platform run natively on supported set of web browsers without any additional plugin downloads.
 
-This basic Multi-Party RTC Application is generated using HTML, CSS, Bootstrap, JavaScript, jQuery, C# and EnxRtc (The EnableX Web Toolkit). 
+This basic Multi-Party RTC Application is generated using HTML, CSS, Bootstrap, JavaScript, jQuery, C# and EnxRtc (The EnableX Web Toolkit).
 
 >The details of the supported set of web browsers can be found here:
 https://developer.enablex.io/video/browser-compatibility-of-enablex-video/
