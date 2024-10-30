@@ -7,17 +7,17 @@ RTC Applications hosted on EnableX platform run natively on supported set of web
 This basic Multi-Party RTC Application is generated using HTML, CSS, Bootstrap, JavaScript, jQuery, C# and EnxRtc (The EnableX Web Toolkit).
 
 >The details of the supported set of web browsers can be found here:
-https://developer.enablex.io/video/browser-compatibility-of-enablex-video/
+https://developer.enablex.io/docs/quickstart/video/browser-compatibility/index/
 
 
 ## 1. Important!
 
-When developing a Client Application with EnxRtc.js make sure to include the updated EnxRtc.js polyfills from https://developer.enablex.io/video-api/client-api/web-toolkit/ for RTCPeerConnection and getUserMedia. Otherwise your application will not work in web browsers.
+When developing a Client Application with EnxRtc.js make sure to include the updated EnxRtc.js polyfills from https://developer.enablex.io/docs/references/sdks/video-sdk/web-sdk/index/ for RTCPeerConnection and getUserMedia. Otherwise your application will not work in web browsers.
 
 
 ## 2. Trial
 
-Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/ or try our multiparty video chat https://try.enablex.io/.
+Sign up for a free trial https://www.enablex.io/free-trial/ or try our multiparty video chat https://try.enablex.io/.
 
 
 ## 3. Installation
@@ -26,7 +26,7 @@ Sign up for a free trial https://portal.enablex.io/cpaas/trial-sign-up/ or try o
 
 #### 3.1.1 App Id and App Key 
 
-* Register with EnableX [https://portal.enablex.io/cpaas/trial-sign-up/] 
+* Register with EnableX [https://www.enablex.io/free-trial/] 
 * Create your Application
 * Get your App ID and App Key
 * Clone this Repository `git clone https://github.com/EnableX/Multiparty-Video-Calling-C-Sharp-Application --recursive`
@@ -91,11 +91,13 @@ meeting rooms. API Access is given to each Application through the assigned App 
 are to be used as Username and Password respectively to pass as HTTP Basic Authentication header to access Server API.
 
 For this application, the following Server API calls are used:
-* https://developer.enablex.io/video-api/server-api/rooms-route/#create-room - To create room to carry out a video session
-* https://developer.enablex.io/video-api/server-api/rooms-route/#create-token - To create Token for the given Room to join a session
+* https://developer.enablex.io/docs/references/apis/video-api/content/api-routes/#create-a-room - To create a room
+* https://developer.enablex.io/docs/references/apis/video-api/content/api-routes/#get-a-list-of-rooms - To get list of Rooms
+* https://developer.enablex.io/docs/references/apis/video-api/content/api-routes/#get-room-information - To get information of the given Room
+* https://developer.enablex.io/docs/references/apis/video-api/content/api-routes/#create-a-token - To create Token for the given Room
 
 To know more about Server API, go to:
-https://developer.enablex.io/video-api/server-api/
+https://developer.enablex.io/docs/references/apis/video-api/index/
 
 
 ## 6. Client API
@@ -103,4 +105,4 @@ https://developer.enablex.io/video-api/server-api/
 Client End Point Application uses Web Toolkit EnxRtc.js to communicate with EnableX Servers to initiate and manage RTC Communications.
 
 To know more about Client API, go to:
-https://developer.enablex.io/video-api/client-api/
+https://developer.enablex.io/docs/references/sdks/video-sdk/web-sdk/index/
